@@ -1,0 +1,257 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	height: 100%;
+	width: 100%;
+	background-color: black;
+}
+#centerDiv {
+	height: 100%;
+	width: 626px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+#scoreboardDiv {
+	height: 42px;
+	width: 618px;
+	color: white;
+	position: relative;
+	font-size: 30px;
+	background-color: #282525;
+	border: solid thick black;
+}
+.scoreboardText {
+	margin-left: 30px;
+}
+#niceDiv {
+	height: 20px;
+	width: 50px;
+	font-style: italic;
+	color: pink;
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	font-size: 50px;
+}
+#awesomeDiv {
+	height: 20px;
+	width: 50px;
+	font-style: italic;
+	color: pink;
+	position: absolute;
+	left: 80%;
+	top: 10%;
+	font-size: 50px;
+}
+#wowDiv {
+	height: 20px;
+	width: 50px;
+	font-style: italic;
+	color: pink;
+	position: absolute;
+	left: 10%;
+	top: 40%;
+	font-size: 50px;
+}
+#keepDiv {
+	height: 20px;
+	width: 50px;
+	font-style: italic;
+	color: pink;
+	position: absolute;
+	left: 80%;
+	top: 40%;
+	font-size: 50px;
+}
+#farDiv {
+	height: 20px;
+	width: 50px;
+	font-style: italic;
+	color: pink;
+	position: absolute;
+	left: 10%;
+	top: 70%;
+	font-size: 50px;
+}
+#groovyDiv {
+	height: 20px;
+	width: 50px;
+	font-style: italic;
+	color: pink;
+	position: absolute;
+	left: 80%;
+	top: 70%;
+	font-size: 50px;
+}
+#targetGrid {
+	width: 627px;
+	height: 509px;
+	background-color: white;
+	z-index: 1;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	border: thin solid black;
+	border-radius: 3px;
+}
+#gameOverDiv {
+	width: 627px;
+	height: 509px;
+	background-color: #282525;
+	z-index: 10;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	border: thick solid black;
+	border-radius: 3px;
+	color: white;
+	visibility: hidden;
+}
+#gameOverText {
+	top: 25px;
+	left: 0px;
+	right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	text-align: center;
+	font-size: 80px;
+}
+#overAcc {
+	position: absolute;
+	top: 170;
+	left: 380px;
+	font-size: 30px;
+}
+#overTps {
+	position: absolute;
+	top: 250px;
+	left: 380px;
+	font-size: 30px;
+}
+#overHighestStreak {
+	position: absolute;
+	top: 170px;
+	left: 30px;
+	font-size: 30px;
+}
+#overTime {
+	position: absolute;
+	top: 250px;
+	left: 30px;
+	font-size: 30px;
+}
+#overScore {
+	top: 330px;
+	left: 0px;
+	right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	text-align: center;
+	font-size: 50px;
+}
+#playAgain {
+  background: #c7c7c7;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px #000000;
+  font-family: Arial;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 4px;
+  text-decoration: none;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 420px;
+}
+
+#playAgain:hover {
+  background: #3d3d3d;
+}
+.box {
+	position: relative;
+	float: left;
+	margin-right: 3px;
+	margin-bottom:3px;
+	width: 30px;
+	height: 30px;
+	background-color: #b9b9b9;
+	box-shadow: 2px 2px #282525;
+	z-index:2;
+	border-radius: 2px;
+}
+#clickDiv {
+	position: absolute;
+	background-color: black;
+	z-index:10;
+	height: 5px;
+	width: 5px;
+	border-radius: 5px;
+	visibility: hidden;
+}
+#accDiv {
+	position: absolute;
+	color: purple;
+	font-size: 30px;
+	height: 20px;
+	width: 50px;
+	z-index: 6;
+	visibility: hidden;
+}
+.target {
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	background-color: orange;
+	border-radius: 0px;
+	z-index: 3;
+	border: thin solid black;
+	left: 100px;
+	top: 300px;
+}
+.innerTarget {
+	width: 0px;
+	height: 0px;
+	position: relative;
+	background-color: white;
+	border-radius: 0px;
+	z-index: 4;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.inmostTarget {
+	width: 0px;
+	height: 0px;
+	position: relative;
+	background-color: orange;
+	border-radius: 0px;
+	z-index: 5;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

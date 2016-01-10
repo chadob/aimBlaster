@@ -1,0 +1,36 @@
+<html>
+	<head>
+	<title> Aim Blaster </title>
+	<link href = "index.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div id="centerDiv"> </div>
+		<div id="niceDiv"><span class="streakSpan, noSelect"></span></div>
+		<div id="awesomeDiv"><span class="streakSpan, noSelect"></span></div>
+		<div id="wowDiv"><span class="streakSpan, noSelect"></span></div>
+		<div id="keepDiv"><span class="streakSpan, noSelect"></span></div>
+		<div id="farDiv"><span class="streakSpan, noSelect"></span></div>
+		<div id="groovyDiv"><span class="streakSpan, noSelect"></span></div> 
+		<div id="targetGrid">
+			<div id="scoreboardDiv">
+				<span id="scoreText" class="scoreboardText, noSelect"> Score: 0</span>
+				<span id="missedTarText" class="scoreboardText, noSelect"> Missed: 0</span>
+				<span id="timeText" class="scoreboardText, noSelect"> Time: 0</span>
+				<span id="streakText" class="scoreboardText, noSelect"> Streak: 0</span>
+			</div>
+			<div id="accDiv"><span class="noSelect" id="accText"> hi </span></div>
+			<div id="clickDiv"></div>
+		</div> 
+		<div id="gameOverDiv">
+			<span id="gameOverText"> Game Over</span>
+			<span id="overScore"> </span>
+			<span id="overTime"> </span>
+			<span id="overHighestStreak"> </span>
+			<span id="overAcc"> </span>
+			<span id="overTps"> </span>
+			<button id="playAgain"> Play Again? </button>
+		</div>
+		<script src="jquery-1.11.3.js"></script>
+		<script src="aimScript.js"></script>
+	</body>
+</html>
