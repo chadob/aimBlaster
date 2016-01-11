@@ -93,9 +93,9 @@ $(function() {
 			//show words congratulating you for your streak
 			randomDiv = Math.floor(Math.random() * 5);
 			randomText = Math.floor(Math.random() * 13);
-			currentGratsDiv = $('#' + divArray[randomDiv] + ' .streakSpan');
+			currentGratsDiv = $('#' + divArray[randomDiv]);
 			currentGratsDiv.text(gratsArray[randomText]);
-			currentGratsDiv.css("display", "block")
+			currentGratsDiv.css("display", "block");
 			currentGratsDiv.fadeOut(1000, function(e) {
 				$(this).text();
 			});			
