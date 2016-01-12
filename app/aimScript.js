@@ -1,6 +1,6 @@
 $(function() {
 	var missedTargets = 0, score = 0, tarNum = 0, currentGratsDiv, missedClicks = 0, targetClicks = 0, tps = 0, highestStreak = 0, streak = 0, timer=0, targetCreationTimer= 1000, randomDiv, randomText, leftD, topD, randomLeft, randomTop, lClick, tClick;
-	var gratsArray = ["Dank!", "SickNasty!", "Sweet!", "Spectacular!", "Fanflippingtastic!", "Super!", "Cool!", "Righteous!", "Radical!", "Nice!", "Awesome!", "Wow!", "Keep Going!", "Far Out!"];
+	var gratsArray = ["SickNasty!", "Sweet!", "Spectacular!", "Fanflippingtastic!", "Super!", "Cool!", "Righteous!", "Radical!", "Nice!", "Awesome!", "Wow!", "Keep Going!", "Far Out!"];
 	var divArray = ['niceDiv', 'awesomeDiv', 'wowDiv', 'keepDiv', 'farDiv', 'groovyDiv'];
 
 //grow,shrink, and remove the targets
@@ -92,7 +92,7 @@ $(function() {
 			targetClicks++;
 			//show words congratulating you for your streak
 			randomDiv = Math.floor(Math.random() * 5);
-			randomText = Math.floor(Math.random() * 13);
+			randomText = Math.floor(Math.random() * 12);
 			currentGratsDiv = $('#' + divArray[randomDiv]);
 			currentGratsDiv.text(gratsArray[randomText]);
 			currentGratsDiv.css("display", "block");
